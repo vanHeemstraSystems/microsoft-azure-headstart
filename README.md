@@ -7,10 +7,14 @@ Based on "Building and Deploying to Azure with GitHub Actions" at https://docs.m
 
 ## 100 - Introduction
 
+See [README.md](./100/README.md)
+
 ## 200 - Requirements
 
-I have a Pay-as-You-Go subscription with Azure, browse to https://portal.azure.com/?quickstart=True#view/Microsoft_Azure_Resources/QuickstartCenterBlade
+See [README.md](./200/README.md)
 
-To keep a free subscription with Azure see https://www.youtube.com/watch?v=Tqx_el2Vs28
+## 300 - Building Our Application
 
-To monitor Azure, see "Metrist" for Cloud Monitoring at https://github.com/vanHeemstraSystems/monitoring-management
+See [README.md](./300/README.md)
+
+## 400 - Conclusion
