@@ -44,6 +44,14 @@ Be sure to initiate the repository with ```npm init``` and install required Node
 ```
 **package.json**
 
+Make sure to at least once build your NodeJS application (with ```npm install```) so that a **package-lock.json** file gets created. Commit this file to the repository, as it is mandatory for the Github Actions workflow to exist.
+
+```
+... some text here
+
+```
+**package-lock.json**
+
 The workflow template "Deploy Node.js to Azure Web App" creates the following file at ```.github/workflows```:
 
 ```
