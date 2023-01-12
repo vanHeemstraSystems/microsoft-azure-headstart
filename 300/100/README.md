@@ -1,5 +1,5 @@
-# 100 - Create a Hello World Github Action
+# 100 - Deploy Node.js to Azure Web App
 
-Based on "Hello GitHub Actions" at https://github.com/skills/hello-github-actions
+Based on "Deploy Node.js to Azure Web App" at [https://github.com/skills/hello-github-actions](https://github.com/vanHeemstraSystems/microsoft-azure-headstart/new/main?filename=.github%2Fworkflows%2Fazure-webapps-node.yml&workflow_template=deployments%2Fazure-webapps-node)
 
-Despite this tutorial, which very much depends on prepared iterations to demonstrate the creation of a workflow, we have just added the correct files inside ```./github/workflows/``` folder.
+
