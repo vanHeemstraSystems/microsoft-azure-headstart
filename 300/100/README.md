@@ -52,6 +52,31 @@ Make sure to at least once build your NodeJS application (with ```npm install```
 ```
 **package-lock.json**
 
+___
+
+This workflow assumes you have already created the target Azure App Service web app.
+
+For instructions see https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-cli
+
+To configure this workflow:
+
+### Step 1:
+
+Download the Publish Profile for your Azure Web App. You can download this file from the Overview page of your Web App in the Azure Portal.
+
+For more information: https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel#generate-deployment-credentials
+
+### Step 2:
+
+Create a secret in your repository named AZURE_WEBAPP_PUBLISH_PROFILE, paste the publish profile contents as the value of the secret.
+
+For instructions on obtaining the publish profile see: https://docs.microsoft.com/azure/app-service/deploy-github-actions#configure-the-github-secret
+
+### Step 2:
+
+Change the value for the AZURE_WEBAPP_NAME. Optionally, change the AZURE_WEBAPP_PACKAGE_PATH and NODE_VERSION environment variables below.
+___
+
 The workflow template "Deploy Node.js to Azure Web App" creates the following file at ```.github/workflows```:
 
 ```
