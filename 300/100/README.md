@@ -25,6 +25,7 @@ Be sure to initiate the repository with ```npm init``` and install required Node
   "name": "my_package",
   "description": "",
   "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
