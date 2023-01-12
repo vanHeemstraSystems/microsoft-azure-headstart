@@ -2,7 +2,48 @@
 
 Based on "Deploy Node.js to Azure Web App" at [https://github.com/skills/hello-github-actions](https://github.com/vanHeemstraSystems/microsoft-azure-headstart/new/main?filename=.github%2Fworkflows%2Fazure-webapps-node.yml&workflow_template=deployments%2Fazure-webapps-node)
 
-This create the following file at ```.github/workflows```:
+Based on "Simple NodeJS Application" at https://linuxhint.com/simple_nodejs_application/
+
+The NodeJS app "Simple NodeJS Application" creates the following file at the root of our repository:
+
+```
+let http = require('http')
+server = http.createServer(function(request, response) {
+    response.write('Hello World')
+    response.end()
+})
+
+server.listen(8080)
+console.log ("Server Running")
+```
+**server.js**
+
+Be sure to initiate the repository with ```npm init``` and install required NodeJS modules (e.g., http with ```npm install http```) which will be listed in the generated file ```package.json```.
+
+```
+{
+  "name": "my_package",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanHeemstraSystems/microsoft-azure-headstart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanHeemstraSystems/microsoft-azure-headstart/issues"
+  },
+  "homepage": "https://github.com/vanHeemstraSystems/microsoft-azure-headstart"
+}
+```
+**package.json**
+
+The workflow template "Deploy Node.js to Azure Web App" creates the following file at ```.github/workflows```:
 
 ```
 # This workflow will build and push a node.js application to an Azure Web App when a commit is pushed to your default branch.
@@ -85,4 +126,4 @@ jobs:
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
 ```
-azure-webapps-node.yml
+**azure-webapps-node.yml**
