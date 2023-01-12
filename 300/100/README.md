@@ -62,7 +62,7 @@ To configure this workflow:
 
 ### Step 1:
 
-Download the Publish Profile for your Azure Web App. You can download this file from the Overview page of your Web App in the Azure Portal.
+[Download the Publish Profile for your Azure Web App](https://learn.microsoft.com/en-us/visualstudio/azure/how-to-get-publish-profile-from-azure-app-service?view=vs-2022). You can download this file from the Overview page of your Web App in the Azure Portal.
 
 For more information: https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel#generate-deployment-credentials
 
